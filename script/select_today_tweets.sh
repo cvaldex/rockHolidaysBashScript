@@ -1,11 +1,10 @@
 #!/bin/bash
 
-source ../pass/password.txt #TO-DO Esto hay que encriptarlo
 source ../config/config.txt
 
 echo "Copying today Tweets..."
 
-export PGPASSFILE=../pgpass/.pgpass
+export PGPASSFILE=../pgpass/.pgpass #TO-DO Esto hay que encriptarlo
 export TODAY_DATE=$(date +"%Y-%m-%d")
 
 psql -h $DB_HOST -U $DB_USER -d $DB_DBNAME -v a_date=\'$TODAY_DATE\' --file ../sql/insert_today_tweets.sql

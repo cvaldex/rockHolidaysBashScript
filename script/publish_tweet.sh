@@ -5,7 +5,8 @@ source ../config/passwords.txt
 
 PROCESS_NAME="Publish Tweet"
 CURRENT_DATE=$(date +"%Y%m%d_%H%M%S")
-LOG_FILE=$HOME/rockHolidaysBatch/log/$CURRENT_DATE.txt
+LOCAL_PATH=$HOME/rockHolidaysBashScript
+LOG_FILE=$LOCAL_PATH/log/$CURRENT_DATE.txt
 
 echo "[$PROCESS_NAME] Starting process"
 

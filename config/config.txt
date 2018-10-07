@@ -1,3 +1,4 @@
 DB_HOST="rockholidays.cvecralyfpim.us-east-1.rds.amazonaws.com"
 DB_USER="rockholidays"
 DB_DBNAME="rockholidays"
+DB_PORT=5432

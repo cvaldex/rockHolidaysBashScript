@@ -14,6 +14,6 @@ echo "java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $D
 
 java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $DB_PORT $DB_DBNAME $DB_USER $DB_PASSWORD > $LOG_FILE
 
-cat $LOG_FILE | mail -s "Resultado publicación tweet $CURRENT_DATE" cvaldex@gmail.com
+cat $LOG_FILE | mail -s "Resultado publicación tweet $CURRENT_DATE" todayinrockhistorytwitter@gmail.com
 
 echo "[$PROCESS_NAME] Process Finished!"

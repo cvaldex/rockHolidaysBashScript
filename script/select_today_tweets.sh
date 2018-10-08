@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Move to sources directory
+cd $HOME/rockHolidaysBashScript/script
+
 source ../config/config.txt
 
 echo "Copying today Tweets..."

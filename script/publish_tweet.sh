@@ -15,12 +15,6 @@ echo "[$PROCESS_NAME] Starting process"
 
 #TO-DO ver lo de enviar a archivo con tee
 
-echo "DB_HOST: $DB_HOST" >> $LOG_FILE
-echo "DB_PORT: $DB_PORT" >> $LOG_FILE
-echo "DB_DBNAME: $DB_DBNAME" >> $LOG_FILE
-echo "DB_USER: $DB_USER" >> $LOG_FILE
-echo "DB_PASSWORD: $DB_PASSWORD" >> $LOG_FILE
-
 echo "java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $DB_PORT $DB_DBNAME $DB_USER $DB_PASSWORD >> $LOG_FILE"
 
 java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $DB_PORT $DB_DBNAME $DB_USER $DB_PASSWORD >> $LOG_FILE

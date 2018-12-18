@@ -17,7 +17,7 @@ echo "[$PROCESS_NAME] Starting process"
 
 echo "java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $DB_PORT $DB_DBNAME $DB_USER $DB_PASSWORD >> $LOG_FILE"
 
-java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $DB_PORT $DB_DBNAME $DB_USER $DB_PASSWORD >> $LOG_FILE
+java -jar $HOME/rockHolidaysBatch/target/rockholidaysbatch.jar $DB_HOST $DB_PORT $DB_DBNAME $DB_USER $DB_PASSWORD >> $LOG_FILE 2>&1
 
 cat $LOG_FILE | mail -s "Resultado publicación tweet $CURRENT_DATE" todayinrockhistorytwitter@gmail.com
 
